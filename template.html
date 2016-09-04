@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Matt Everson of Astuteo, LLC – http://astuteo.com/slickmap" />
+	<title>bdwschool.net sitemap</title>
+	
+<!-- 
+Updated by David Cross. 
+
+Now, use as many levels as you'd like. Levels 4 and lower are placed as a stack 
+below the level three item. They will grow sideways though, so don't go too deep.
+
+Made as single page so it can be used as a template in iOS apps like 
+Drafts (by Agile Tortoise). The hope being to use a simple list and then 
+"markdown convert" to the final visual.
+
+Original Slickmap created by Matt Everson (http://astuteo.com/slickmap)
+
+All images converted to SVG and placed inline as data-urls
+(via http://codepen.io/shshaw/blog/responsive-placeholder-image)
+
+Theme based on "A Project Guide to UX Design" (New Riders, 2009)
+
+ -->
+
+<style media="all">
+/* ------------------------------------------------------------
+	Reset Styles (from meyerweb.com)
+------------------------------------------------------------ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+*, *::before, *::after { box-sizing: border-box;}
+
+
+/* ------------------------------------------------------------
+	NUMBER OF COLUMNS: Adjust div>ul:last-of-type li to set the number
+	of columns required in your site map. The default is 
+	4 columns (25%). 5 columns would be 20%, 6 columns would 
+	be 16.6%, etc. 
+	
+	No longer requires setting a class on div. via Lea Verou (styling elements based on sibling count).
+------------------------------------------------------------ */
+
+
+div>ul:last-of-type li ul li {
+  /* what is this setting for? */
+	/*width:100% !important;*/
+}
+
+div>ul:last-of-type>li:first-child:nth-last-child(2),
+div>ul:last-of-type>li:first-child:nth-last-child(2) ~ li { width:99.9%; }
+div>ul:last-of-type>li:first-child:nth-last-child(3),
+div>ul:last-of-type>li:first-child:nth-last-child(3) ~ li { width:50.0%; }
+div>ul:last-of-type>li:first-child:nth-last-child(4),
+div>ul:last-of-type>li:first-child:nth-last-child(4) ~ li { width:33.3%; }
+div>ul:last-of-type>li:first-child:nth-last-child(5),
+div>ul:last-of-type>li:first-child:nth-last-child(5) ~ li { width:25.0%; }
+div>ul:last-of-type>li:first-child:nth-last-child(6),
+div>ul:last-of-type>li:first-child:nth-last-child(6) ~ li { width:20.0%; }
+div>ul:last-of-type>li:first-child:nth-last-child(7),
+div>ul:last-of-type>li:first-child:nth-last-child(7) ~ li { width:16.6%; }
+div>ul:last-of-type>li:first-child:nth-last-child(8),
+div>ul:last-of-type>li:first-child:nth-last-child(8) ~ li { width:14.2%; }
+div>ul:last-of-type>li:first-child:nth-last-child(9),
+div>ul:last-of-type>li:first-child:nth-last-child(9) ~ li { width:12.5%; }
+div>ul:last-of-type>li:first-child:nth-last-child(10),
+div>ul:last-of-type>li:first-child:nth-last-child(10) ~ li { width:11.1%; }
+div>ul:last-of-type>li:first-child:nth-last-child(11),
+div>ul:last-of-type>li:first-child:nth-last-child(11) ~ li { width:10.0%; }
+
+
+/* ------------------------------------------------------------
+	General Styles
+------------------------------------------------------------ */
+
+body {
+	background: white;
+	color: black;
+	padding: 40px;
+	font-family: Gotham, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 1;
+}
+.sitemap {
+	margin: 0 0 40px 0;
+	float: left;
+	width: 100%;
+}
+h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 0 0 5px 0;
+}
+h2 {
+	font-family: "Lucida Grande", Verdana, sans-serif;
+	font-size: 10px;
+	color: #777777;
+	margin: 0 0 20px 0;
+}
+a {
+	text-decoration: none;
+	position: relative;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+/* ------------------------------------------------------------
+	Site Map Styles
+------------------------------------------------------------ */
+
+/* --------	Top Level --------- */
+
+div>ul:last-of-type {
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+div>ul:last-of-type>li:first-child {
+	display: block;
+	float: none;
+	background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22820px%22%20height%3D%2232px%22%20viewBox%3D%220%200%20820%2032%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22L1-left%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%22401%22%20y1%3D%2218%22%20x2%3D%22820%22%20y2%3D%2218%22%20%2F%3E%3Cline%20x1%3D%22400%22%20y1%3D%220%22%20x2%3D%22400%22%20y2%3D%2232%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') center bottom no-repeat;
+	position: relative;
+	z-index: 2;
+	padding: 0 0 30px 0;
+}
+div>ul:last-of-type>li:nth-child(2) {
+	background: none;
+}
+div>ul:last-of-type li {
+	float: left;
+	background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22820px%22%20height%3D%2232px%22%20viewBox%3D%220%200%20820%2032%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22L1-center%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%220%22%20y1%3D%2216%22%20x2%3D%22820%22%20y2%3D%2216%22%20%2F%3E%3Cline%20x1%3D%22400%22%20y1%3D%2217%22%20x2%3D%22400%22%20y2%3D%2232%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') center top no-repeat;
+	padding: 30px 0;
+	margin-top: -30px;
+}
+div>ul:last-of-type li a {
+	margin: 0 20px 0 0;
+	padding: 0 0 10px 0;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: black;	
+	border: 2px solid black;
+	background-color: white;
+}
+div>ul:last-of-type li:last-child {
+	background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22820px%22%20height%3D%2232px%22%20viewBox%3D%220%200%20820%2032%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22L1-right%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%220%22%20y1%3D%2216%22%20x2%3D%22401%22%20y2%3D%2216%22%20%2F%3E%3Cline%20x1%3D%22400%22%20y1%3D%2217%22%20x2%3D%22400%22%20y2%3D%2232%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') center top no-repeat;
+}
+a::before, div>ul:last-of-type a::after {
+	content: " "attr(href)" ";
+	display: block;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 10px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	word-wrap: break-word;
+	color: white;
+	background-color: black;
+}
+a[href="#"]::before {
+  color: #000;
+}
+
+/* --------	Counters --------- */
+ul { counter-reset: item;}
+div>ul:last-of-type a::after {
+	/*text-align: right;
+	background-color: transparent;*/
+	position: absolute;
+	top:0; right:0;
+	content: counters(item, ".");
+	counter-increment: item
+}
+div>ul:last-of-type>li>a::after { content: counter(item) ".0.0"; counter-increment: item }
+div>ul:last-of-type>li>ul>li>a::after { content: counters(item, ".") ".0"; counter-increment: item }
+
+
+/* --------	Second Level --------- */
+
+div>ul:last-of-type li li {
+	width: 100%;
+	clear: left;
+	margin-top: 0;
+	padding: 10px 0 0 0;
+	background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2222px%22%20height%3D%2250px%22%20viewBox%3D%220%200%2022%2050%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22vertical-line%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%221%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%2250%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') center bottom repeat-y;
+}
+
+div>ul:last-of-type li li:first-child {
+	padding-top: 30px;
+}
+div>ul:last-of-type li li:last-child {
+	background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2222px%22%20height%3D%2250px%22%20viewBox%3D%220%200%2022%2050%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22vertical-line%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%221%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%2250%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') center bottom repeat-y;
+}
+
+
+/* --------	Third Level --------- */
+
+div>ul:last-of-type li li ul {
+	margin: 10px 0 0 0;
+	width: 100%;
+	float: right;
+	padding: 9px 0 0 0;
+	background-color: #ffffff;
+	background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22822px%22%20height%3D%2210px%22%20viewBox%3D%220%200%20822%2010%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22L3-ul-top%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%220%22%20y1%3D%228%22%20x2%3D%22402%22%20y2%3D%228%22%20%2F%3E%3Cline%20x1%3D%22401%22%20y1%3D%220%22%20x2%3D%22401%22%20y2%3D%227%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') center top  no-repeat,
+	 url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2222px%22%20height%3D%22500px%22%20viewBox%3D%220%200%2022%20500%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22vertical-line%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%220%22%20y1%3D%228%22%20x2%3D%2219%22%20y2%3D%228%22%20%2F%3E%3Cline%20x1%3D%221%22%20y1%3D%229%22%20x2%3D%221%22%20y2%3D%22500%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') left top no-repeat,
+	 url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22802px%22%20height%3D%2210px%22%20viewBox%3D%220%200%20802%2010%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22L3-bottom%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%220%22%20y1%3D%229%22%20x2%3D%22392%22%20y2%3D%229%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') center bottom no-repeat;
+	background-color: #ffffff;
+
+}
+div>ul:last-of-type li li li {
+	background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2272px%22%20height%3D%22150px%22%20viewBox%3D%220%200%2072%20150%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22L3-center%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%2210%22%20y1%3D%2275%22%20x2%3D%2272%22%20y2%3D%2275%22%20%2F%3E%3Cline%20x1%3D%2210%22%20y1%3D%220%22%20x2%3D%2210%22%20y2%3D%22150%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') left center no-repeat;
+	padding: 5px 0;
+	position: relative;
+	z-index: 2;
+}
+div>ul:last-of-type li li li a {
+	width: calc(100% - 45px);
+	float: right;
+}
+div>ul:last-of-type li li li:first-child {
+	padding: 15px 0 5px 0;
+	background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2272px%22%20height%3D%22160px%22%20viewBox%3D%220%200%2072%20160%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22L3-li-top%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%2210%22%20y1%3D%2285%22%20x2%3D%2272%22%20y2%3D%2285%22%20%2F%3E%3Cline%20x1%3D%2210%22%20y1%3D%220%22%20x2%3D%2210%22%20y2%3D%22160%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') left center no-repeat;
+}
+div>ul:last-of-type li li li:last-child {
+	background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22138px%22%20height%3D%22174px%22%20viewBox%3D%220%200%20138%20174%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22L3-bottom%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%2210%22%20y1%3D%2286%22%20x2%3D%2272%22%20y2%3D%2286%22%20%2F%3E%3Cline%20x1%3D%2210%22%20y1%3D%220%22%20x2%3D%2210%22%20y2%3D%2287%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') left center no-repeat;
+	padding-bottom: 15px;
+}
+
+
+div>ul:last-of-type li li:last-child ul {
+	background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2210px%22%20height%3D%2210px%22%20viewBox%3D%220%200%2010%2010%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22vertical-line%22%20fill%3D%22%23ffffff%22%20opacity%3D%221.0%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%229%22%20height%3D%2210%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') left top no-repeat,
+	url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22822px%22%20height%3D%2210px%22%20viewBox%3D%220%200%20822%2010%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20id%3D%22L3-ul-top%22%20stroke%3D%22%23999999%22%20stroke-width%3D%222%22%20opacity%3D%221.0%22%3E%3Cline%20x1%3D%220%22%20y1%3D%228%22%20x2%3D%22402%22%20y2%3D%228%22%20%2F%3E%3Cline%20x1%3D%22401%22%20y1%3D%220%22%20x2%3D%22401%22%20y2%3D%227%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') center top no-repeat;
+	background-color: #ffffff;
+}
+
+
+/* --------	nth Level --------- */
+div>ul:last-of-type li li li ul {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+	background: none;
+}
+div>ul:last-of-type li li li li,div>ul:last-of-type li li li li:first-child,div>ul:last-of-type li li li li:last-child {
+	padding: 5px 0;
+	position: absolute;
+	top:3px;left:3px;
+	z-index: -1;
+	background: none;
+
+}
+
+/* ------------------------------------------------------------
+	Utility Navigation
+------------------------------------------------------------ */
+
+div>ul:first-of-type {
+	float: right;
+	max-width: 50%;
+	margin-right: 10px;
+	position: relative;
+	top:31px;
+}
+div>ul:first-of-type li {
+	float: left;
+	margin-bottom: 10px;
+}
+div>ul:first-of-type li a {
+	margin: 0 10px 0 0;
+	padding: 0 0 5px 0px;
+	display: block;	
+	border: 2px solid black;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	background: white;
+	min-width: 70px;
+}
+
+hr {display:none;}
+
+
+</style>
+<style media="print">
+div>ul:last-of-type li a, div>ul:first-of-type li a {border: 1px solid black;}
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="sitemap">
+		
+{{CONTENT}}
+
+	</div>
+	
+</body>
+
+</html>
